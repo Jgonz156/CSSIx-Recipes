@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Recipes</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+  </head>
+  <body>
+    <div>
+      <h1>Here are your Recipes</h1>
+    </div>
+      <section>
+      {% for result in results.results %}
+      <div class = "container">
+        <p id = "title">{{ result.title }}</p>
+        <p id = "ingredients">{{ result.ingredients }}</p>
+        <p id = "image"><img src="{{ result.thumbnail }}""</p>
+      </div>
+      {% endfor %}
+      </section>
+    <div>
+    <form method="post" action="/">
+        <input type="submit" value="Return To Search">
+    </form>
+    </div>
+  </body>
+</html>
