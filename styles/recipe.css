@@ -20,25 +20,30 @@ div{
   border-radius: 20px;
   text-align: center;
 }
+
 p{
   padding: 5px;
 }
+
 div.container{
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-rows: 30% auto;
   height: auto;
 }
+
 p#title{
   grid-column: 2;
   grid-row: 1;
   font-size: 20px;
   font-weight: bold;
 }
+
 p#ingredients{
   grid-column: 2;
   grid-row: 2;
 }
+
 p#image{
   grid-column: 1;
   grid-row: 1 /span 2;
