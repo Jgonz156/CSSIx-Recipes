@@ -30,6 +30,7 @@ div.container{
   grid-template-columns: 30% auto;
   grid-template-rows: 30% auto;
   height: auto;
+  width: 75vw;
 }
 
 p#title{
@@ -47,4 +48,10 @@ p#ingredients{
 p#image{
   grid-column: 1;
   grid-row: 1 /span 2;
+}
+
+img{
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
 }
