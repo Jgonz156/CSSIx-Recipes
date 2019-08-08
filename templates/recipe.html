@@ -14,7 +14,10 @@
       <div class = "container">
         <p id = "title">{{ result.title }}</p>
         <p id = "ingredients">{{ result.ingredients }}</p>
-        <p id = "image"><img src="{{ result.thumbnail }}""</p>
+        <p id = "image"><img src="{{ result.thumbnail }}"></p>
+        <form method="post" action="/">
+            <input type="submit" name="favorite" value="Favorite: {{ result.title }}">
+        </form>
       </div>
       {% endfor %}
       </section>
